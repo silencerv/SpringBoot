@@ -11,8 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class
 HelloWorldController {
 
-    @RequestMapping("/**")
+    @RequestMapping("/")
     String helloWorld(){
         return "Hello world";
+    }
+
+    @RequestMapping("/close")
+    String closeWorld(){
+        return "Close world";
     }
 }
