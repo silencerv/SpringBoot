@@ -15,4 +15,9 @@ HelloWorldController {
     String helloWorld(){
         return "Hello world";
     }
+
+    @RequestMapping("/close")
+    String closeWorld(){
+        return "Close world";
+    }
 }
